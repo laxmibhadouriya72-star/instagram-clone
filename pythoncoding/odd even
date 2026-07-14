@@ -1,0 +1,31 @@
+print("------Welcome to ODD and EVEN------",sep=" ")
+print(">>>>>>> LETS START>>>>>>>>>>>",sep=" ")
+print("---- FIRST ROUND----",sep=" ")
+#total of a , b
+total_a = 0
+total_b = 0
+while True:
+    import random#random numbers
+    random.randint(1,30)
+    a = random.randint(1,30)
+    b = random.randint(1,30)
+    print("value of a:",a,sep=" ")
+    print("value of b:",b,sep=" ")
+    if a>b:
+        total_a += a#a total value
+        print("---- A WIN  >>>",sep=" ")
+        print("Total of a is = ",total_a,sep=" ")
+        print("-----next ROUND----",sep=" ")
+        continue
+    elif b>a:
+        total_b += b# b total value 
+        print("--- B WIN >>>",sep=" ")
+        print("Total of b is = ",total_b,sep=" ")
+        print("Total of a after loss is = ",total_a,sep=" ")#total a after loss
+        print("-----nexts ROUND--",sep=" ")
+    elif a==b:#match tie
+        print("    << MATCH TIE >>       ")
+        break
+    else:#end of match
+        ("STOP THE MATCH")
+       
