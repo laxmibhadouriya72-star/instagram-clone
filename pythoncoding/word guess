@@ -1,0 +1,19 @@
+import random
+word_bank = ['apple','banana','cherry','date','elderberry','mango','strawaberry']
+word = random.choice(word_bank)
+guessed_letters = ['_']*len(word)
+attempts = 5
+while attempts > 0:
+    print(' '.join(guessed_letters))
+    guess = input('guess a letter:')
+    if guess in word:
+        for i in range(len(word)):
+            if word[i] ==guess:
+                guessed_letters[i] = guess
+            else:
+                attempts -= 1
+                print('incorrect guess!')
+            if '_' not in guessed_letters:
+                print('you win!')
+                break 
+
